@@ -1,3 +1,36 @@
-.header{
-    background-color: saddlebrown;
+*{
+    margin: 0;
+    box-sizing: border-box;
 }
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: saddlebrown;  
+    width:auto;
+    display:block; 
+    text-align: center;
+}
+
+#logo__container{
+    display:inline;
+    background-color: #f2f2f3;
+    width: 100%;
+}
+
+#logo__text{
+    float: left;
+}
+
+.img__container{
+    width: 120px;
+    height: 120px;
+    height: auto;
+    float: right;
+}
+
+#logo__{
+    max-width: 100%;
+    height: auto;
+}
+
