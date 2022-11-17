@@ -30,14 +30,14 @@ header{
 
 #logo__text{
     position: absolute;
-    top: 1%;
-    right: 39%;
+    top: 5%;
+    left: 41%;
 }
 
 .img__container{
     position: absolute;
     top: 1%;
-    right: 30%;
+    left: 65%;
     width: 120px;
     height: 120px;
     height: auto;
@@ -46,6 +46,7 @@ header{
 #logo__{
     max-width: 100%;
     height: auto;
+    border-radius: 100%;
 }
 
 /* navbar */
@@ -54,7 +55,7 @@ header{
     align-items: center;
     display: inline;
     text-align: center;
-    top:60px;
+    top:10%;
     left: 45%;
     vertical-align: baseline;
 }
