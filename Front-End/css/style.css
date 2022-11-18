@@ -199,3 +199,31 @@ footer{
     display: inline-block;
     orientation: vertical;
 }
+
+.info__container{
+    margin: 10px 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    border-radius: 2%;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+.bussines__info__content
+.shipping__info__content{
+    margin: 6px;
+}
+
+.bussines__info__title
+.shipping__info__title{
+    margin: 6px;
+    font-size: 2.2rem;
+}
+
+.bussines__info__description
+.shipping__info__description{
+    margin: 6px;
+    font-size: 1.5rem;
+}
