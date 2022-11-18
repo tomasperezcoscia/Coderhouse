@@ -15,49 +15,27 @@
         </div>
         <nav id="navbar">
             <ul class="unordered__list" id="navbar__list">
-                <li class="navbar__list__option"><a href="#">Inicio</a></li>
-                <li class="navbar__list__option"><a href="#">Productos</a></li>
-                <li class="navbar__list__option"><a href="#">Contacto</a></li>
+                <li class="navbar__list__option"><a href="./index.html">Inicio</a></li>
+                <li class="navbar__list__option"><a href="./productos.html">Productos</a></li>
+                <li class="navbar__list__option"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <div id="main__content">
-        <div id="controls__container">
-            <ul class="unordered__list">
-                <li class="group__selector"><a href="#">Grupo1</a></li>
-                <li class="group__selector"><a href="#">Grupo2</a></li>
-                <li class="group__selector"><a href="#">Grupo3</a></li>
-            </ul>
-            <div id="price_range"></div>
+        
+        <div id="contact__form">
+            <form action="contacto.html" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
-        <div id="card__container">
-            <div class="card">
-                <h2>Producto1</h2>
-                <img src="" alt="Producto1">
-            </div>
-            <div class="card">
-                <h2>Producto2</h2>
-                <img src="" alt="Producto2">
-            </div>
-            <div class="card">
-                <h2>Producto3</h2>
-                <img src="" alt="Producto3">
-            </div>
-            <div class="card">
-                <h2>Producto4</h2>
-                <img src="" alt="Producto4">
-            </div>
-            <div class="card">
-                <h2>Producto5</h2>
-                <img src="" alt="Producto5">
-            </div>
-            <div class="card">
-                <h2>Producto6</h2>
-                <img src="" alt="Producto6">
-            </div> 
-        </div>
-        <div id="ads__aside">
-            <a href="https://www.google.com"><img src="" alt="publicidad"></a>
+        <div id="google__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.793977971554!2d-58.38194468477051!3d-34.6037229804598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf0b0b8b0b0b%3A0x1b8b8b8b8b8b8b8b8!2sCABA!5e0!3m2!1ses-419!2sar!4v1629202010003!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div id="support__bubble">
