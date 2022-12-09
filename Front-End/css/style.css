@@ -21,13 +21,12 @@ header{
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100vw;
-    height: 20vh;
+    height: auto;
     background-color: whitesmoke;  
     text-align: center;
     border-bottom: #993003 6px solid;
     justify-items: center;
     align-items: center;
-    
 }
 
 #logo__container{
@@ -48,8 +47,9 @@ header{
 .img__container{
     width: 120px;
     height: 120px;
-    height: auto;
     max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 #logo__image{
@@ -90,6 +90,13 @@ header{
 }
 
 #main__content__products{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#main__content__contact{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -139,6 +146,7 @@ header{
 
 .card{
     margin: 10px 0;
+    transition: 500ms ease all;
 }
 
 
@@ -214,24 +222,6 @@ footer{
     top: 50%;
 }
 
-#contact__form{
-    position: relative;
-    top: 45%;
-    left: 50%;
-    font-size: .7rem;
-    z-index: 4;
-}
-
-#google__map{
-    position: relative;
-    top: 0;
-    left: 10%;
-    font-size: .7rem;
-    z-index: 4;
-    display: inline-block;
-    orientation: vertical;
-}
-
 .info__container{
     margin: 10px 20px;
     box-shadow: 4px 2px 4px 1px rgba(220, 0, 0, 0.1);
@@ -257,6 +247,7 @@ footer{
     font-size: 1.5rem;
 }
 
+
 /* media queries */
 
 @media (max-width: 576px){
@@ -267,8 +258,8 @@ footer{
         width: 100px;
         height: 100px;
     }
-    #cart__bubble{
-        display: none;
+    #cart__btn{
+        top: 90%;
     }
     #cart-btn-text{
         display: none;
@@ -281,5 +272,16 @@ footer{
     }
     #navbar ul li{
         font-size: larger;
+    }
+    #contact__form{
+        width: 75%;
+        margin-top: 20px;
+    }
+    #main__content__contact{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #google_map{
+        margin-top: 20px;
     }
 }

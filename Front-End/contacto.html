@@ -5,65 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomas Perez Coscia - Preentrega 1</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div id="logo__container">
             <h1 id="logo__text">SOL MARTINEZ NAILS</h1>
-            <div class="img__container"><img src="img/descargar.png" alt="logo" id="logo__"></div>
+            <div class="img__container"><img src="img/descargar.png" alt="logo" id="logo__image"></div>
         </div>
         <nav id="navbar">
             <ul class="unordered__list" id="navbar__list">
                 <li class="navbar__list__option"><a href="./index.html">Inicio</a></li>
                 <li class="navbar__list__option"><a href="./productos.html">Productos</a></li>
-                <li class="navbar__list__option"><a href="./contacto.html">Contacto</a></li>
+                <li class="navbar__list__option"><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <div id="main__content">
+    <div id="main__content__contact">
         
         <div id="contact__form">
-            <form action="contacto.html" method="POST">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Nombre">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input type="submit" value="Enviar">
-            </form>
+            <form>
+                <div class="mb-3">
+                  <label for="InputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">No vamos a compartir tu mail con nadie.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="Nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="Nombre">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="message">Envianos un mensaje</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+              </form>
         </div>
-        <div id="google__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.793977971554!2d-58.38194468477051!3d-34.6037229804598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf0b0b8b0b0b%3A0x1b8b8b8b8b8b8b8b8!2sCABA!5e0!3m2!1ses-419!2sar!4v1629202010003!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div id="google_map">
+            <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=567&amp;hl=en&amp;q=Gral%20Roca%20783%20Tandil+(Hola%20Bonita)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
         </div>
-
-        <div id="support__bubble">
-            <div id="support__bubble__content">
-                <h2>¿Necesitas ayuda?</h2>
-                <p>Envianos un mensaje y te responderemos a la brevedad</p>
-                <button id="support__bubble__button">Contacto</button>
-            </div>
-        </div>
-
         <div id="cart__bubble">
             <div id="cart__bubble__content">
-                <h2>Carrito</h2>
-                <p>0 productos</p>
-                <button id="cart__bubble__button">Ver carrito</button>
+                <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" id="cart__btn"><span id="cart-btn-text">Carrito</span><ion-icon name="cart-outline" id="cart__icon"></ion-icon></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Carrito</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div id="cart__content">
+                            <div id="cart__product__container">
+                                <div class="cart__product__content">
+                                    <div class="cart__product__image__container">
+                                        <img src="#" alt="producto" class="cart__product__image">
+                                    </div>
+                                    <div class="cart__product__info">
+                                        <div class="cart__product__info__name__container">
+                                            <p class="cart__product__info__name">Producto 1</p>
+                                        </div>
+                                        <div class="cart__product__info__price__container">
+                                            <p class="cart__product__info__price">$1000</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart__product__remove__btn__container">
+                                        <button class="btn btn-sm btn-danger cart__product__remove__btn">X</button>
+                                    </div>
+                                </div>
+                                <div class="cart__product__content">
+                                    <div class="cart__product__image__container">
+                                        <img src="img/productos/2.jpg" alt="producto" class="cart__product__image">
+                                    </div>
+                                    <div class="cart__product__info">
+                                        <div class="cart__product__info__name__container">
+                                            <p class="cart__product__info__name">Producto 2</p>
+                                        </div>
+                                        <div class="cart__product__info__price__container">
+                                            <p class="cart__product__info__price">$1000</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart__product__remove__btn__container">
+                                        <button class="btn btn-sm btn-danger cart__product__remove__btn">X</button>
+                                    </div>
+                                </div>
+                                <div class="cart__product__content">
+                                    <div class="cart__product__image__container">
+                                        <img src="img/productos/3.jpg" alt="producto" class="cart__product__image">
+                                    </div>
+                                    <div class="cart__product__info">
+                                        <div class="cart__product__info__name__container">
+                                            <p class="cart__product__info__name">Producto 3</p>
+                                        </div>
+                                        <div class="cart__product__info__price__container">
+                                            <p class="cart__product__info__price">$1000</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart__product__remove__btn__container">
+                                        <button class="btn btn-sm btn-danger cart__product__remove__btn">X</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <div id="socials">
-            <a href="https://www.instagram.com/sol_insumos_nails/"><img src="" alt="instagram"></a>
+            <a href="https://www.instagram.com/sol_insumos_nails/" class="socials-link"><ion-icon name="logo-instagram" id="instagram-ft-logo"></ion-icon><span id="">Nuestro Instagram</span></a>
         </div>
         <div id="dev__info">
-            <h1>Developed by Tomas Perez Coscia</h1>
+            <p>Developed by Tomas Perez Coscia</p>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
